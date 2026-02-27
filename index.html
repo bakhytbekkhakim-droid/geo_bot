@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Geo Map</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        body { font-family: sans-serif; text-align: center; background: #1a1a1a; color: white; margin: 0; padding: 20px; }
+        .map-container { width: 100%; max-width: 600px; margin: auto; }
+        svg path { fill: #444; stroke: #fff; stroke-width: 0.5; transition: 0.3s; cursor: pointer; }
+        svg path:hover { fill: #0088cc; }
+        .info { margin-top: 20px; font-size: 14px; color: #aaa; }
+    </style>
+</head>
+<body>
+    <h3>🌍 Картадан аймақты таңдаңыз</h3>
+    <div class="map-container">
+        <svg viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
+            <path d="M50 5 H95 V30 H50 Z" onclick="selectRegion('Евразия')" />
+            <text x="65" y="20" fill="white" font-size="5" pointer-events="none">Евразия</text>
+            
+            <path d="M45 35 H65 V55 H45 Z" onclick="selectRegion('Африка')" />
+            <text x="47" y="47" fill="white" font-size="4" pointer-events="none">Африка</text>
+
+            <path d="M5 5 H40 V30 H5 Z" onclick="selectRegion('Солтүстік Америка')" />
+            <text x="10" y="20" fill="white" font-size="4" pointer-events="none">С. Америка</text>
+
+            <path d="M15 35 H35 V55 H15 Z" onclick="selectRegion('Оңтүстік Америка')" />
+            <text x="17" y="47" fill="white" font-size="4" pointer-events="none">О. Америка</text>
+        </svg>
+    </div>
+    <p class="info">Аймақты басқанда, бот сізге сол жер туралы AI арқылы мәлімет береді.</p>
+
+    <script>
+        let tg = window.Telegram.WebApp;
+        tg.expand();
+
+        function selectRegion(name) {
+            tg.sendData(name); // Ботқа мәлімет жіберу
+        }
+    </script>
+</body>
+</html>
