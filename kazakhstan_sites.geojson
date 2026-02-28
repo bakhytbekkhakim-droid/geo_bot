@@ -4,42 +4,90 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Бөкей ордасы тарихи-музей кешені",
-                "gx_media_links": "https://www.youtube.com/watch?v=kYm69m_vB_w"
+                "name": "Мавзолей Ходжа Ахмеда Ясави (Туркестан)",
+                "description": "Объект всемирного наследия ЮНЕСКО, шедевр архитектуры XIV века.",
+                "gx_media_links": "https://www.youtube.com/watch?v=e_tK7_W_N_U"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    47.4525,
-                    48.9133
+                    68.2708,
+                    43.2978
                 ]
             }
         },
         {
             "type": "Feature",
             "properties": {
-                "name": "Babaji Khatun Mausoleum",
-                "gx_media_links": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-            },
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    71.21000,
-                    42.83300
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "name": "Қорқыт ата кешені",
+                "name": "Комплекс «Қорқыт ата» (Кызылординская обл.)",
+                "description": "Мемориал великому мыслителю и создателю кобыза.",
                 "gx_media_links": "https://www.youtube.com/watch?v=sGhWA8eWZsY"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    63.93470,
-                    45.60340
+                    63.9347,
+                    45.6034
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Мавзолей Жошы-хана (Улытау)",
+                "description": "Место упокоения старшего сына Чингисхана.",
+                "gx_media_links": "https://www.youtube.com/watch?v=FTlOApEAeiA"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    67.8172,
+                    48.1556
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Древнее городище Отырар",
+                "description": "Один из древнейших городов Средней Азии, центр торговли на Шелковом пути.",
+                "gx_media_links": "https://www.youtube.com/watch?v=doSTWcnO_Mw"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    68.3029,
+                    42.8528
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Мавзолей Арыстан-баба",
+                "description": "Усыпальница учителя и духовного наставника Ходжа Ахмеда Ясави.",
+                "gx_media_links": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    68.2680,
+                    42.8510
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Подземная мечеть Бекет-ата",
+                "description": "Духовный центр Мангистау, вырубленный в скале.",
+                "gx_media_links": "https://www.youtube.com/watch?v=S0u1_9_N6S8"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    54.8694,
+                    43.5936
                 ]
             }
         }
