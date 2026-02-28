@@ -1,77 +1,88 @@
 import telebot
-from telebot import types
 import json
 import random
+from telebot import types
+import re
 
-# Ваш токен
+# 1. Настройка бота с вашим актуальным токеном
 TOKEN = '8733100208:AAGQ_UunyE1eiqPgURvGQJ7xoeBKJB341hY'
 bot = telebot.TeleBot(TOKEN)
 
-# Функция для чтения локаций из файла
-def load_locations(filename='map.geojson'):
-    with open(filename, 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    
-    # ПЕЧАТАЕМ В ТЕРМИНАЛ СВОЙСТВА ПЕРВОГО ОБЪЕКТА (чтобы найти, где спрятано название)
-    if data.get('features'):
-        print("--- ДИАГНОСТИКА ---")
-        print("Свойства из файла:", data['features'][0].get('properties'))
-        print("-------------------")
-        
-    places = []
-    for feature in data.get('features', []):
-        properties = feature.get('properties', {})
-        
-        # Пробуем разные популярные варианты ключей для названия
-        name = properties.get('name', properties.get('Name', properties.get('title', 'Неизвестная локация'))) 
-        
-        geometry = feature.get('geometry', {})
-        if geometry and geometry.get('type') == 'Point':
-            coordinates = geometry.get('coordinates', [0, 0])
-            places.append({
-                'name': name,
-                'lon': coordinates[0],
-                'lat': coordinates[1],
-                'video_url': properties.get('video_url')
-            })
-    return places
+# 2. Функция загрузки данных из GeoJSON
+def load_locations():
+    try:
+        with open('kazakhstan_sites.geojson', 'r', encoding='utf-8') as f:
+            data = json.load(f)
+            return data.get('features', [])
+    except Exception as e:
+        print(f"Ошибка при чтении файла: {e}")
+        return []
 
-places_list = load_locations()
-
+# 3. Приветственное сообщение
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-    btn1 = types.KeyboardButton("📍 Случайная локация")
-    markup.add(btn1)
+    markup.add(types.KeyboardButton("🔎 Найти случайное место"))
     
-    bot.send_message(
-        message.chat.id, 
-        "Сәлем! Нажми на кнопку ниже, и я покажу тебе случайную интересную локацию в Казахстане 🇰🇿",
-        reply_markup=markup
+    welcome_text = (
+        "🇰🇿 Привет! Я путеводитель по историческим местам.\n\n"
+        "Нажми кнопку, и я пришлю тебе случайную локацию с картой и видеообзором!"
     )
+    bot.reply_to(message, welcome_text, reply_markup=markup)
 
-@bot.message_handler(commands=['place'])
-@bot.message_handler(func=lambda message: message.text == "📍 Случайная локация")
+# 4. Основная логика (с проверкой координат и видео)
+@bot.message_handler(func=lambda message: message.text == "🔎 Найти случайное место")
 def send_random_place(message):
-    if not places_list:
-        bot.send_message(message.chat.id, "Упс, список локаций пуст или не загрузился.")
+    places = load_locations()
+    
+    if not places:
+        bot.send_message(message.chat.id, "❌ База данных пуста.")
         return
-    
-    random_place = random.choice(places_list)
-    
-    markup = None
-    if random_place.get('video_url'):
-        markup = types.InlineKeyboardMarkup()
-        btn = types.InlineKeyboardButton("Смотреть видеообзор", url=random_place['video_url'])
-        markup.add(btn)
-        
-    bot.send_message(message.chat.id, f"Отправляемся сюда: {random_place['name']}", reply_markup=markup)
-    bot.send_location(
-        message.chat.id, 
-        latitude=random_place['lat'], 
-        longitude=random_place['lon']
-    )
 
-if __name__ == '__main__':
-    print("Бот запущен и готов к работе! Жду сообщений...")
+    # Выбираем случайное место
+    target = random.choice(places)
+    props = target.get('properties', {})
+    geom = target.get('geometry', {})
+    
+    # Определяем название (поддерживаем разные форматы имен)
+    name = props.get('name') or props.get('Name') or "Интересное место"
+    
+    # --- БЛОК ВИДЕО ---
+    video_url = props.get('gx_media_links')
+    if not video_url and 'description' in props:
+        desc_data = props['description']
+        text_to_search = str(desc_data['value']) if isinstance(desc_data, dict) else str(desc_data)
+        # Ищем YouTube ссылки в тексте
+        youtube_links = re.findall(r'(https?://(?:www\.)?youtube\.com/[^\s<>"]+|https?://youtu\.be/[^\s<>"]+)', text_to_search)
+        if youtube_links:
+            video_url = youtube_links[0]
+
+    # --- БЛОК КАРТЫ (Исправленный) ---
+    has_map = False
+    if geom and geom.get('type') == 'Point':
+        coords = geom.get('coordinates')
+        if coords and len(coords) >= 2:
+            try:
+                # В GeoJSON: [долгота, широта]. В Telegram: (широта, долгота)
+                bot.send_location(message.chat.id, coords[1], coords[0])
+                has_map = True
+            except Exception as e:
+                print(f"Ошибка отправки координат: {e}")
+
+    # --- ОТПРАВКА ТЕКСТА И КНОПКИ ---
+    markup = types.InlineKeyboardMarkup()
+    if video_url:
+        # Очищаем ссылку от лишних символов HTML
+        clean_url = video_url.split('"')[0].split("'")[0]
+        markup.add(types.InlineKeyboardButton("📺 Смотреть видеообзор", url=clean_url))
+    
+    status_msg = f"📍 *{name}*"
+    if not has_map:
+        status_msg += "\n\n_(Координаты для этого места временно отсутствуют)_"
+        
+    bot.send_message(message.chat.id, status_msg, parse_mode='Markdown', reply_markup=markup)
+
+# 5. Запуск
+if __name__ == "__main__":
+    print("--- БОТ ЗАПУЩЕН ---")
     bot.polling(none_stop=True)
