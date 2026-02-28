@@ -5,8 +5,17 @@
             "type": "Feature",
             "properties": {
                 "name_kz": "Қожа Ахмет Ясауи кесенесі",
-                "description_kz": "Түркістандағы ортағасырлық сәулет өнерінің жауһары, ЮНЕСКО мұрасы.",
-                "gx_media_links": "https://youtu.be/GowWu8ce9I4"
+                "wiki_url": "https://kk.wikipedia.org/wiki/Қожа_Ахмет_Ясауи_кесенесі",
+                "gx_media_links": "https://youtu.be/GowWu8ce9I4",
+                "test": {
+                    "question": "Кесене қай билеушінің бұйрығымен салынған?",
+                    "options": [
+                        "Әмір Темір",
+                        "Жошы хан",
+                        "Абылай хан"
+                    ],
+                    "correct": 0
+                }
             },
             "geometry": {
                 "type": "Point",
@@ -20,8 +29,17 @@
             "type": "Feature",
             "properties": {
                 "name_kz": "Қорқыт Ата мемориалдық кешені",
-                "description_kz": "Ұлы ойшыл және қобыз атасы Қорқытқа арналған ескерткіш.",
-                "gx_media_links": "https://www.youtube.com/watch?v=sGhWA8eWZsY"
+                "wiki_url": "https://kk.wikipedia.org/wiki/Қорқыт_ата_ескерткіші",
+                "gx_media_links": "https://www.youtube.com/watch?v=sGhWA8eWZsY",
+                "test": {
+                    "question": "Қорқыт ата қандай аспаптың негізін салушы?",
+                    "options": [
+                        "Домбыра",
+                        "Қобыз",
+                        "Жетіген"
+                    ],
+                    "correct": 1
+                }
             },
             "geometry": {
                 "type": "Point",
@@ -35,8 +53,17 @@
             "type": "Feature",
             "properties": {
                 "name_kz": "Айша бибі кесенесі",
-                "description_kz": "XII ғасырдағы махаббат пен адалдықтың нышаны, ерекше терракотамен безендірілген.",
-                "gx_media_links": "https://www.youtube.com/watch?v=mYshfL_Vp5A"
+                "wiki_url": "https://kk.wikipedia.org/wiki/Айша_бибі_кесенесі",
+                "gx_media_links": "https://www.youtube.com/watch?v=mYshfL_Vp5A",
+                "test": {
+                    "question": "Айша бибі кесенесі қай қаланың маңында орналасқан?",
+                    "options": [
+                        "Тараз",
+                        "Шымкент",
+                        "Қызылорда"
+                    ],
+                    "correct": 0
+                }
             },
             "geometry": {
                 "type": "Point",
@@ -50,8 +77,17 @@
             "type": "Feature",
             "properties": {
                 "name_kz": "Жошы хан кесенесі",
-                "description_kz": "Ұлытау төріндегі Шыңғыс ханның үлкен ұлы жерленген орын.",
-                "gx_media_links": "https://www.youtube.com/watch?v=FTlOApEAeiA"
+                "wiki_url": "https://kk.wikipedia.org/wiki/Жошы_хан_кесенесі",
+                "gx_media_links": "https://www.youtube.com/watch?v=FTlOApEAeiA",
+                "test": {
+                    "question": "Жошы хан кімнің үлкен ұлы болған?",
+                    "options": [
+                        "Шыңғыс хан",
+                        "Бату хан",
+                        "Әмір Темір"
+                    ],
+                    "correct": 0
+                }
             },
             "geometry": {
                 "type": "Point",
@@ -65,8 +101,17 @@
             "type": "Feature",
             "properties": {
                 "name_kz": "Бекет ата жерасты мешіті",
-                "description_kz": "Маңғыстаудың киелі рухани орталығы, Оғланды шатқалындағы жартастан қашалған.",
-                "gx_media_links": "https://www.youtube.com/watch?v=S0u1_9_N6S8"
+                "wiki_url": "https://kk.wikipedia.org/wiki/Бекет_ата_мешіті",
+                "gx_media_links": "https://www.youtube.com/watch?v=S0u1_9_N6S8",
+                "test": {
+                    "question": "Бекет ата мешіті қай облыста орналасқан?",
+                    "options": [
+                        "Атырау",
+                        "Маңғыстау",
+                        "Ақтөбе"
+                    ],
+                    "correct": 1
+                }
             },
             "geometry": {
                 "type": "Point",
@@ -80,14 +125,119 @@
             "type": "Feature",
             "properties": {
                 "name_kz": "Отырар қалашығы",
-                "description_kz": "Әл-Фарабидің отаны және Ұлы Жібек жолының маңызды орталығы.",
-                "gx_media_links": "https://www.youtube.com/watch?v=doSTWcnO_Mw"
+                "wiki_url": "https://kk.wikipedia.org/wiki/Отырар",
+                "gx_media_links": "https://www.youtube.com/watch?v=doSTWcnO_Mw",
+                "test": {
+                    "question": "Отырар қаласы қай ғалымның туған жері?",
+                    "options": [
+                        "Абай",
+                        "Әл-Фараби",
+                        "Ыбырай Алтынсарин"
+                    ],
+                    "correct": 1
+                }
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
                     68.3029,
                     42.8528
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name_kz": "Арыстан баб кесенесі",
+                "wiki_url": "https://kk.wikipedia.org/wiki/Арыстан_баб_кесенесі",
+                "gx_media_links": "https://www.youtube.com/watch?v=pAnu9z88A4c",
+                "test": {
+                    "question": "Арыстан баб кімнің рухани ұстазы болған?",
+                    "options": [
+                        "Қожа Ахмет Ясауи",
+                        "Бекет ата",
+                        "Абай"
+                    ],
+                    "correct": 0
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    68.2680,
+                    42.8510
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name_kz": "Бөкей ордасы кешені",
+                "wiki_url": "https://kk.wikipedia.org/wiki/Бөкей_ордасы_тарихи-музей_кешені",
+                "gx_media_links": "https://www.youtube.com/watch?v=kYm69m_vB_w",
+                "test": {
+                    "question": "Бөкей ордасындағы ең алғашқы мектеп қай жылы ашылды?",
+                    "options": [
+                        "1841 ж.",
+                        "1905 ж.",
+                        "1890 ж."
+                    ],
+                    "correct": 0
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    47.4525,
+                    48.9133
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name_kz": "Алаша хан кесенесі",
+                "wiki_url": "https://kk.wikipedia.org/wiki/Алаша_хан_кесенесі",
+                "gx_media_links": "https://www.youtube.com/watch?v=W0oB2i2k8sQ",
+                "test": {
+                    "question": "Алаша хан кесенесі қай өзеннің бойында орналасқан?",
+                    "options": [
+                        "Сырдария",
+                        "Қаракеңгір",
+                        "Ертіс"
+                    ],
+                    "correct": 1
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    67.8427,
+                    48.3672
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name_kz": "Тамғалы-Тас",
+                "wiki_url": "https://kk.wikipedia.org/wiki/Тамғалы_тас",
+                "gx_media_links": "https://www.youtube.com/watch?v=kM6nKIdvDsk",
+                "test": {
+                    "question": "Тамғалы-Тас жартастарында не бейнеленген?",
+                    "options": [
+                        "Будда бейнелері",
+                        "Заманауи суреттер",
+                        "Тек аңдар"
+                    ],
+                    "correct": 0
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.0000,
+                    44.0600
                 ]
             }
         }
