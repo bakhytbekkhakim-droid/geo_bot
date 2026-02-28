@@ -8,7 +8,7 @@ TOKEN = '8733100208:AAGQ_UunyE1eiqPgURvGQJ7xoeBKJB341hY'
 bot = telebot.TeleBot(TOKEN)
 
 # Функция для чтения локаций из файла
-def load_locations(filename='map.geojson'):
+def load_locations(filename='kazakhstan_sites.geojson'):
     with open(filename, 'r', encoding='utf-8') as f:
         data = json.load(f)
     
@@ -31,8 +31,7 @@ def load_locations(filename='map.geojson'):
             places.append({
                 'name': name,
                 'lon': coordinates[0],
-                'lat': coordinates[1],
-                'video_url': properties.get('video_url')
+                'lat': coordinates[1]
             })
     return places
 
@@ -59,13 +58,7 @@ def send_random_place(message):
     
     random_place = random.choice(places_list)
     
-    markup = None
-    if random_place.get('video_url'):
-        markup = types.InlineKeyboardMarkup()
-        btn = types.InlineKeyboardButton("Смотреть видеообзор", url=random_place['video_url'])
-        markup.add(btn)
-        
-    bot.send_message(message.chat.id, f"Отправляемся сюда: {random_place['name']}", reply_markup=markup)
+    bot.send_message(message.chat.id, f"Отправляемся сюда: {random_place['name']}")
     bot.send_location(
         message.chat.id, 
         latitude=random_place['lat'], 
