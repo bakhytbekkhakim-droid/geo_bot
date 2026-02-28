@@ -4,9 +4,9 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Мавзолей Ходжа Ахмеда Ясави (Туркестан)",
-                "description": "Объект всемирного наследия ЮНЕСКО, шедевр архитектуры XIV века.",
-                "gx_media_links": "https://www.youtube.com/watch?v=e_tK7_W_N_U"
+                "name": "Мавзолей Ходжа Ахмеда Ясави",
+                "description": "Шедевр средневековой архитектуры в Туркестане, объект ЮНЕСКО.",
+                "gx_media_links": "https://youtu.be/GowWu8ce9I4"
             },
             "geometry": {
                 "type": "Point",
@@ -19,8 +19,8 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Комплекс «Қорқыт ата» (Кызылординская обл.)",
-                "description": "Мемориал великому мыслителю и создателю кобыза.",
+                "name": "Мемориал Коркыт Ата",
+                "description": "Памятник великому тюркскому мыслителю и создателю кобыза.",
                 "gx_media_links": "https://www.youtube.com/watch?v=sGhWA8eWZsY"
             },
             "geometry": {
@@ -34,8 +34,23 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Мавзолей Жошы-хана (Улытау)",
-                "description": "Место упокоения старшего сына Чингисхана.",
+                "name": "Мавзолей Айша-Биби",
+                "description": "Памятник любви и верности XII века, украшенный терракотовой плиткой.",
+                "gx_media_links": "https://www.youtube.com/watch?v=mYshfL_Vp5A"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    71.2103,
+                    42.8336
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Мавзолей Жошы-хана",
+                "description": "Место захоронения старшего сына Чингисхана в самом сердце Улытау.",
                 "gx_media_links": "https://www.youtube.com/watch?v=FTlOApEAeiA"
             },
             "geometry": {
@@ -49,8 +64,23 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Древнее городище Отырар",
-                "description": "Один из древнейших городов Средней Азии, центр торговли на Шелковом пути.",
+                "name": "Подземная мечеть Бекет-ата",
+                "description": "Духовный центр Мангистау, вырубленный прямо в скале урочища Огланды.",
+                "gx_media_links": "https://www.youtube.com/watch?v=S0u1_9_N6S8"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    54.8694,
+                    43.5936
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Древний город Отырар",
+                "description": "Крупный центр Шелкового пути и родина великого ученого Аль-Фараби.",
                 "gx_media_links": "https://www.youtube.com/watch?v=doSTWcnO_Mw"
             },
             "geometry": {
@@ -65,8 +95,8 @@
             "type": "Feature",
             "properties": {
                 "name": "Мавзолей Арыстан-баба",
-                "description": "Усыпальница учителя и духовного наставника Ходжа Ахмеда Ясави.",
-                "gx_media_links": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                "description": "Усыпальница духовного наставника Ахмеда Ясави.",
+                "gx_media_links": "https://www.youtube.com/watch?v=pAnu9z88A4c"
             },
             "geometry": {
                 "type": "Point",
@@ -79,15 +109,45 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Подземная мечеть Бекет-ата",
-                "description": "Духовный центр Мангистау, вырубленный в скале.",
-                "gx_media_links": "https://www.youtube.com/watch?v=S0u1_9_N6S8"
+                "name": "Бөкей ордасы",
+                "description": "Уникальный музейный комплекс — первая школа и типография в степи.",
+                "gx_media_links": "https://www.youtube.com/watch?v=kYm69m_vB_w"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    54.8694,
-                    43.5936
+                    47.4525,
+                    48.9133
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Мавзолей Алаша-хана",
+                "description": "Величественное сооружение, связанное с легендарным предком казахов.",
+                "gx_media_links": "https://www.youtube.com/watch?v=W0oB2i2k8sQ"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    67.8427,
+                    48.3672
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Тамгалы-Тас",
+                "description": "Урочище с наскальными изображениями Будд и древнетюркских рун.",
+                "gx_media_links": "https://www.youtube.com/watch?v=kM6nKIdvDsk"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.0000,
+                    44.0600
                 ]
             }
         }
