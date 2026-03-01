@@ -58,8 +58,194 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    55.1167,
-                    49.9500
+                    55.1161,
+                    49.9547
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name_kz": "Сарайшық қалашығы",
+                "wiki_url": "https://kk.wikipedia.org/wiki/Сарайшық",
+                "gx_media_links": "https://www.youtube.com/watch?v=1VVk35vxN0k",
+                "quiz": [
+                    {
+                        "question": "Сарайшық қай хандықтың астанасы болды?",
+                        "options": [
+                            "Ноғай Ордасы",
+                            "Қазан хандығы",
+                            "Ақ Орда"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "question": "Қала қай өзеннің бойында орналасқан?",
+                        "options": [
+                            "Жайық",
+                            "Ертіс",
+                            "Сырдария"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "question": "Сарайшықты кімдер қиратты?",
+                        "options": [
+                            "Иван Грозный әскері",
+                            "Жоңғарлар",
+                            "Патша өкіметі"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "question": "Мұнда қанша хан жерленген делінеді?",
+                        "options": [
+                            "7 хан",
+                            "3 хан",
+                            "12 хан"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "question": "Қаланың негізі қай ғасырда қаланды?",
+                        "options": [
+                            "XIII ғ.",
+                            "X ғ.",
+                            "XV ғ."
+                        ],
+                        "correct": 0
+                    }
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    51.4883,
+                    47.3333
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name_kz": "Тақсай ханшайымы",
+                "wiki_url": "https://kk.wikipedia.org/wiki/Тақсай_ханшайымы",
+                "gx_media_links": "https://www.youtube.com/watch?v=1DtogzARusk",
+                "quiz": [
+                    {
+                        "question": "Тақсай ханшайымы қай облыстан табылды?",
+                        "options": [
+                            "Батыс Қазақстан",
+                            "Ақтөбе",
+                            "Маңғыстау"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "question": "Ол қай кезеңге жатады?",
+                        "options": [
+                            "б.з.д. VI-V ғғ. (Сақ)",
+                            "Орта ғасыр",
+                            "Түркі дәуірі"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "question": "Ханшайыммен бірге тағы кімдер жерленген?",
+                        "options": [
+                            "Екі қызметші әйел",
+                            "Екі батыр",
+                            "Күзетшілер"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "question": "Оның киімі немен әшекейленген?",
+                        "options": [
+                            "Алтын жапсырмалар",
+                            "Күміс",
+                            "Асыл тастар"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "question": "Қорым қалай аталады?",
+                        "options": [
+                            "Тақсай-1",
+                            "Алтын орда",
+                            "Бесшатыр"
+                        ],
+                        "correct": 0
+                    }
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    52.1819,
+                    51.2637
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name_kz": "Жанкент қалашығы",
+                "wiki_url": "https://kk.wikipedia.org/wiki/Жанкент",
+                "gx_media_links": "https://www.youtube.com/watch?v=E_HhDwHW2-c",
+                "quiz": [
+                    {
+                        "question": "Жанкент қай мемлекеттің астанасы болды?",
+                        "options": [
+                            "Оғыз",
+                            "Қыпшақ",
+                            "Қарахан"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "question": "Ол қай облыста?",
+                        "options": [
+                            "Қызылорда",
+                            "Түркістан",
+                            "Жамбыл"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "question": "Жанкенттің екінші атауы?",
+                        "options": [
+                            "Янгикент",
+                            "Отырар",
+                            "Сайрам"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "question": "Қала қай өзеннің сағасында?",
+                        "options": [
+                            "Сырдария",
+                            "Шу",
+                            "Іле"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "question": "Қала қай ғасырда өмір сүруін тоқтатты?",
+                        "options": [
+                            "XV ғ.",
+                            "X ғ.",
+                            "XII ғ."
+                        ],
+                        "correct": 0
+                    }
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    61.9211,
+                    45.6122
                 ]
             }
         },
@@ -71,7 +257,7 @@
                 "gx_media_links": "https://www.youtube.com/watch?v=S0T0E9yE_E0",
                 "quiz": [
                     {
-                        "question": "Бозоқ қалашығы қай қаланың іргесінде?",
+                        "question": "Бозоқ қай қаланың іргесінде?",
                         "options": [
                             "Астана",
                             "Алматы",
@@ -120,8 +306,8 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    71.3340,
-                    51.1040
+                    71.3283,
+                    51.1072
                 ]
             }
         },
@@ -183,7 +369,7 @@
                 "type": "Point",
                 "coordinates": [
                     75.4744,
-                    49.4069
+                    49.4072
                 ]
             }
         },
@@ -244,7 +430,7 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    71.5647,
+                    71.5644,
                     42.9097
                 ]
             }
@@ -306,8 +492,70 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    79.0300,
-                    48.9500
+                    79.0069,
+                    48.9056
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name_kz": "Қожа Ахмет Ясауи кесенесі",
+                "wiki_url": "https://kk.wikipedia.org/wiki/Қожа_Ахмет_Ясауи_кесенесі",
+                "gx_media_links": "https://www.youtube.com/watch?v=GowWu8ce9I4",
+                "quiz": [
+                    {
+                        "question": "Кесене қай қалада?",
+                        "options": [
+                            "Түркістан",
+                            "Тараз",
+                            "Шымкент"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "question": "Кесене кімнің бұйрығымен салынды?",
+                        "options": [
+                            "Әмір Темір",
+                            "Абылай хан",
+                            "Жәнібек хан"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "question": "Кесенедегі үлкен қазан қалай аталады?",
+                        "options": [
+                            "Тайқазан",
+                            "Алтын қазан",
+                            "Қасиетті қазан"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "question": "Кесене неше бөлмеден тұрады?",
+                        "options": [
+                            "35 бөлме",
+                            "10 бөлме",
+                            "20 бөлме"
+                        ],
+                        "correct": 0
+                    },
+                    {
+                        "question": "Кесене қай ғасырда салынды?",
+                        "options": [
+                            "XIV ғ. соңы",
+                            "X ғ.",
+                            "XVIII ғ."
+                        ],
+                        "correct": 0
+                    }
+                ]
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    68.2710,
+                    43.2977
                 ]
             }
         }
